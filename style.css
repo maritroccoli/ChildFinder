@@ -1,0 +1,302 @@
+body, html {
+    font-family: 'Baloo Chettan 2', sans-serif;
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+
+  #perfil {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  #perfil h1 {
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 10px;
+    color: #f7a41b;
+  }
+  
+  #foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px; 
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .foto-filho {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  
+  #titulo-lista {
+    display: inline-flex;
+    width: 80%;
+    justify-content: space-between;
+    vertical-align: middle;
+    height: 50px;
+    margin: 0 9% 30px 9%; 
+  }
+  
+  #titulo-lista h2 {
+    color: #1F1F20;
+    height: 50px;
+  }
+  
+  #add {  
+      padding-top: 30px;
+      font-size: 25px;
+      color: #1F1F20;
+  }
+  
+  #menos {
+    display: none;
+    position: absolute;
+    margin-top: 27px;
+    right: 45px;
+    font-size: 20px;
+  }
+  
+  #add-contato {
+    display: none;
+    background-color: #FAFAFA;
+    border-radius: 10px;  
+    width: 75%;
+    justify-content: space-around;
+    margin: 0 auto 25px auto ;
+    padding: 10px 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  #input-contato {
+    display: flex;
+  }
+  
+  #input-contato input {
+    margin: 10px 0 25px 0;
+    font-size: 19px;  
+    width: 60%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(31, 31, 32, 0.692);
+    padding: 0;
+  }
+  
+  .fa-user-circle {
+    font-size: 40px;
+    margin-right: 25px;
+  }
+  
+  #botoes-add {
+    display: flex;
+    justify-content: space-between;
+  }
+  .botao-add {
+    border: none;
+    background-color: transparent;
+    font-family: 'Baloo Chettan 2', sans-serif;
+    font-size: 17px;
+    color: #0f0f0f;
+  }
+  
+  .active {
+    color: #f7a41b;
+  }
+  
+  #lista-pulseiras {
+    display: block;
+    width: 90%;
+    list-style: none;
+    padding: 0;
+    margin: 0 5% 0 5%;
+  }
+  
+  .item-pulseiras {
+    display: inline-flex;
+    width: 89%;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .item-pulseiras h3, .item-pulseiras p {
+    margin: 0;
+  }
+  
+  .item-pulseiras i {
+      font-size: 23px;
+      margin-top: 10px;
+      color: #f7a41b;
+  }
+  
+  .linha-pulseiras {
+    display: inline-flex;
+  }
+  
+  .nome-pulseiras {
+    margin-left: 20px;
+  }
+  
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    width: 90%;
+    justify-content: space-between;
+    background-color:  rgb(233, 233, 233);
+    padding: 0 5%;
+    display: flex;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+  }
+
+a {
+     color: #f7a41b;
+     font-size: 28px;
+     float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 11px;
+}
+
+#bolinha-menu {
+  display: none;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 50%;
+  border: 5px solid rgb(243, 243, 243);
+  background-color: #f7a41b;
+  height: 65px;
+  width: 65px;
+  box-shadow: 0px 5px 4px grey;
+  z-index: 50;  
+  position: fixed;
+}
+
+#i1ativo {
+  display: none;
+}
+
+ .icone-menu {
+  
+  bottom: 35px;
+  left: 42px;
+  font-size: 30px;
+  color: azure;
+  z-index: 100;  
+  position: fixed;
+}
+
+.bolinha-menu3 {
+  bottom: 20px;
+  right: 10px;
+  border-radius: 50%;
+  border: 5px solid rgb(243, 243, 243);
+  background-color: #f7a41b;
+  height: 65px;
+  width: 65px;
+  box-shadow: 0px 5px 4px grey;
+  z-index: 3;  
+  position: fixed;
+}
+
+.icone-menu3 {
+bottom: 34px;
+right: 34px;
+font-size: 30px;
+color: azure;
+z-index: 100;  
+position: fixed;
+}
+
+i.active {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+  
+  /* TELA DE CONFIGURAÇÃO */
+  
+  /* DISTANCIA */
+  
+  
+  /*REDEFINIR */
+  
+  #config {
+    display: block;
+  }
+  
+  .item-config {
+    width: 80%;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 9%;
+  }
+  
+  .item-config p {
+    margin: 5px 0 0 15px;
+    font-size: 20px;
+  }
+  
+  #redefinir-config {
+    display: none;
+    text-align: justify;
+    width: 80%;
+    margin: 0 10%; 
+  }
+  
+  .botao-redefinir {
+    border: none;
+    background-color: transparent;
+    font-family: 'Baloo Chettan 2', sans-serif;
+    font-size: 17px;
+    color: #0f0f0f;
+  }
+    
+  #botoes-redefinir {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .active {
+    color: #f7a41b;
+    font-weight: bold;
+  }
+  
+  /* BATERIA */
+  
+  #lista-bateria {
+    width: 90%;
+    list-style: none;
+    padding: 0;
+    margin: 0 5% 0 5%;
+  }
+  
+  #bateria-config {
+    display: none;
+  }
+  
+  .item-bateria {
+    display: inline-flex;
+    width: 89%;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+  }
+  
+  .item-bateria h3{
+    margin: 12px 0 0 0;
+  }
+  
+  .item-bateria i {
+      font-size: 23px;
+      margin-top: 10px;
+      color: #f7a41b;
+  }
+  
+  
+  

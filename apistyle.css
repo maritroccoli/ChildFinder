@@ -1,0 +1,145 @@
+body, html {
+  font-family: 'Baloo Chettan 2', sans-serif;
+  margin: 0;
+  background-image:url("./mapa.png");
+  background-repeat: no-repeat;
+  background-position-x: -70px;
+  background-size: 760px;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Place the navbar at the bottom of the page, and make it stick*/ 
+.navbar {
+    width: 90%;
+    justify-content: space-between;
+    background-color:  rgb(233, 233, 233);
+    padding: 0 5%;
+    display: flex;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+  }
+
+a {
+     color: #f7a41b;
+     font-size: 28px;
+     float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 11px;
+}
+.bolinha-menu2 {
+  bottom: 20px;
+  left: 40%;
+  border-radius: 50%;
+  border: 5px solid rgb(243, 243, 243);
+  background-color: #f7a41b;
+  height: 65px;
+  width: 65px;
+  box-shadow: 0px 5px 4px grey;
+  z-index: 3;  
+  position: fixed;
+}
+
+.icone-menu2 {
+  bottom: 34px;
+  left: 46%;
+  font-size: 30px;
+  color: azure;
+  z-index: 100;  
+  position: fixed;
+}
+
+i.active {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.perfil .active {
+  position: center;
+}
+
+/* Add a color to the active/current link */
+a.fa-compass {
+  background-color: #f7a41b;
+  color: white; 
+  size: 50%;
+}
+
+  
+/* CARD*/
+.box-card {
+    overflow-x: scroll;
+    overflow-y: hidden;   
+}
+
+.container {
+  display: flex;
+  margin: 0 5% 0 5%;
+}
+
+/* CARD 01*/
+.florzinha {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; 
+    margin: 20px 10px;
+}
+
+
+.card1 {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    height: 20%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 120%;
+    margin-left: 15%;
+    position: fixed;
+    bottom: 80px;
+}
+
+
+.parte1 {
+    display: block;
+    margin: 20px;
+}
+
+h1,p {
+    font-size: 100%;
+    margin: 0;
+}
+
+
+/* CARD 02*/
+.parte2 {
+    display: inline-flex;
+    margin: -80px;  
+    margin-top: 20px;
+}
+
+.lindinha {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; 
+    margin: 20px 10px;
+}
+
+.card2 {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    height: 20%;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 120%;
+    margin-left: 90%;
+    position: fixed;
+    bottom: 80px;
+}

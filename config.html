@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ChildFinder</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>    
+  </head>
+  <body>
+    <section id="config">
+      <div class="item-config primeiro"> 
+        <i class="iconify" data-icon="mdi:map-marker-radius" data-inline="false" data-inline="false" data-width="40" data-height="40" style="color:#F7A41B"></i>
+        <p> Localizar minha pulseira </p>
+      </div>
+
+      <div id="localizar-config">
+      </div>
+
+
+      <div class="item-config" onclick="distancia()"> 
+        <i class="iconify" data-icon="mdi:map-marker-distance" data-inline="false" data-width="40" data-height="40" style="color:#F7A41B"></i>
+        <p> Editar Distância </p>
+      </div>
+      <div id="distancia-config">
+
+      </div>
+
+      <div class="item-config" onclick="bateria()"> 
+        <i class="iconify" data-icon="mdi:battery-60" data-inline="false" data-rotate="90deg" data-width="40" data-height="40" style="color:#F7A41B"></i>
+        <p> Status das Baterias  </p>
+      </div>
+      <div id="bateria-config">
+        <ul id="lista-bateria">
+          <li class="item-bateria"> 
+            <div class="linha-pulseiras">
+              <img src="./professor.png" alt="foto florzinha" class="foto-filho">   
+              <span class="nome-pulseiras">      
+                <h3> Minha Pulseira </h3>
+              </span>
+            </div>
+            <i class="iconify" data-icon="mdi:battery" data-inline="false" data-rotate="90deg" data-width="30" data-height="40" style="color:#30de00; margin-top: 10px;"></i>
+          </li>
+          <li class="item-bateria"> 
+            <div class="linha-pulseiras">
+              <img src="florzinha.png" alt="foto florzinha" class="foto-filho">   
+              <span class="nome-pulseiras">      
+                <h3> Florzinha </h3>
+              </span>
+            </div>
+            <i class="iconify" data-icon="mdi:battery-60" data-inline="false" data-rotate="90deg" data-width="30" data-height="40" style="color:#deda00; margin-top: 10px;"></i>
+          </li>
+          <li class="item-bateria"> 
+            <div class="linha-pulseiras">
+              <img src="lindinha.png" alt="foto florzinha" class="foto-filho">    
+              <span class="nome-pulseiras">      
+                <h3> Docinho </h3>
+              </span>
+            </div>
+            <i class="iconify" data-icon="mdi:battery-10" data-inline="false" data-rotate="90deg" data-width="30" data-height="40" style="color:#d42300; margin-top: 10px;"></i>
+          </li>
+          <li class="item-bateria"> 
+            <div class="linha-pulseiras">
+              <img src="docinho.png" alt="foto florzinha" class="foto-filho">    
+              <span class="nome-pulseiras">      
+                <h3> Lindinha </h3>
+              </span>
+            </div>
+            <i class="iconify" data-icon="mdi:battery-10" data-inline="false" data-rotate="90deg" data-width="30" data-height="40" style="color:#d42300; margin-top: 10px;"></i>
+          </li>
+        </ul>  
+      </div>    
+
+      <div class="item-config" id="redefinir" onclick="redefinir()"> 
+        <i class="iconify" data-icon="mdi-cog-counterclockwise" data-inline="false" data-width="40" data-height="40" style="color:#F7A41B"></i>
+        <p> Redefinir  </p>
+      </div>
+
+      <div id="redefinir-config">
+        <p> Você tem certeza que deseja redefinir todas as configurações? Isso excluirá todas as pulseiras conectadas. </p>
+        <div id="botoes-redefinir">
+          <button id="conectar" class="botao-redefinir active"> Cancelar </button>
+          <button id="adicionar" class="botao-redefinir"> Confirmar </button>
+        </div>
+      </div>
+    </section>
+
+  <!--tentativa de menu-->
+  <div class="icone-menu3"> <i class="fas fa-cog fas1"></i> </div>
+  <div class="bolinha-menu3"> </div>
+  
+  <div class="navbar">   
+    <a href="./index.html" class="active"> <i class="fas fa-user-alt fas1"></i></a>
+    <a href="./api.html"><i class="fas fa-compass fas1"></i></a>
+    <a href="./config.html"><i class="fas fa-cog fas1"></i></a>    
+  </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>

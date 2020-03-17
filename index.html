@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ChildFinder</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    
+  </head>
+  <body>
+    <!--PERFIL-->
+    <section>
+      <div id="perfil">
+        <img src="./professor.png" id="foto-perfil" alt="Foto de Perfil">
+        <h1> Professor </h1>
+      </div>
+
+      <section id="titulo-lista">
+        <h2> Pulseiras Conectadas </h2>
+        <i class="fas fa-plus" id="add" onclick="add()"></i>    
+        <i class="fas fa-window-minimize" id="menos" onclick="menos()"></i>     
+      </section>
+
+      <div id="add-contato">
+        <div id="input-contato">
+            <i class="fas fa-user-circle"></i>
+            <input type="text" name="Nome" placeholder="Nome"><br><br>            
+        </div>
+        <div id="botoes-add">
+          <button id="conectar" class="botao-add active"> Conectar Dispositivo </button>
+          <button id="adicionar" class="botao-add"> Adicionar </button>
+        </div>
+      </div>
+
+      <ul id="lista-pulseiras">
+        <li class="item-pulseiras"> 
+          <div class="linha-pulseiras">
+            <img src="florzinha.png" alt="foto florzinha" class="foto-filho">   
+            <span class="nome-pulseiras">      
+              <h3> Florzinha </h3>
+              <p> 7m </p>
+            </span>
+          </div>
+          <i class="fas fa-map-marker-alt"></i>
+        </li>
+        <li class="item-pulseiras"> 
+          <div class="linha-pulseiras">
+            <img src="lindinha.png" alt="foto florzinha" class="foto-filho">    
+            <span class="nome-pulseiras">      
+              <h3> Lindinha </h3>
+              <p> 3m </p>
+            </span>
+          </div>
+          <i class="fas fa-map-marker-alt"></i>
+        </li>
+        <li class="item-pulseiras"> 
+          <div class="linha-pulseiras">
+            <img src="docinho.png" alt="foto florzinha" class="foto-filho">    
+            <span class="nome-pulseiras">      
+              <h3> Docinho </h3>
+              <p> 5m </p>
+            </span>
+          </div>
+          <i class="fas fa-map-marker-alt"></i>
+        </li>
+      </ul>
+    </section>  
+
+
+<!--tentativa de menu--> 
+<div class="icone-menu"> <i class="fas fa-user-alt fas1" id="i1ativo"></i> </div>
+<div id="bolinha-menu"> </div>
+
+<div class="navbar"> 
+  <a href="./index.html" class="active" onclick="perfilativo()"> <i class="fas fa-user-alt fas1" id="i1"></i></a>
+  <a href="./api.html" onclick="mapaativo()"><i class="fas fa-compass fas1"></i></a>
+  <a href="./config.html" onclick="configativo()"><i class="fas fa-cog fas1"></i></a>
+</div>
+
+
+
+  <script src="script.js"></script>
+  </body>
+</html>
